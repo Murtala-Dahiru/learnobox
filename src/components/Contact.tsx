@@ -1,20 +1,47 @@
+import { supabase } from '../lib/supabase';
 import React from 'react';
 import { Mail, Phone, MapPin, Instagram, Facebook, Linkedin } from 'lucide-react';
 
+console.log('SUPABASE CLIENT:', supabase);
+
+
 export default function Contact() {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // You can add form submission logic here
-    const formData = new FormData(e.target as HTMLFormElement);
-    const data = Object.fromEntries(formData);
-    
-    // For now, we'll create a mailto link with the form data
-    const subject = `Project Inquiry - ${data.service}`;
-    const body = `Name: ${data.name}\nEmail: ${data.email}\nService: ${data.service}\nBudget: ${data.budget}\n\nProject Details:\n${data.message}`;
-    const mailtoLink = `mailto:learnobox01@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    window.location.href = mailtoLink;
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  const form = e.target as HTMLFormElement;
+  const formData = new FormData(form);
+
+  const data = {
+    name: formData.get("name")?.toString() || "",
+    email: formData.get("email")?.toString() || "",
+    service: formData.get("service")?.toString() || "",
+    budget: formData.get("budget")?.toString() || "",
+    message: formData.get("message")?.toString() || "",
   };
+
+  // 1. Insert into Supabase
+  const { error } = await supabase.from('messages').insert([data]);
+
+  if (error) {
+    console.error("Submission Error:", error.message);
+    alert("❌ Failed to send message. Please try again later.");
+    return;
+  }
+
+  // 2. Optional: Send as mailto fallback
+  const subject = `Project Inquiry - ${data.service}`;
+  const body = `Name: ${data.name}\nEmail: ${data.email}\nService: ${data.service}\nBudget: ${data.budget}\n\nProject Details:\n${data.message}`;
+  const mailtoLink = `mailto:learnobox01@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  // 3. Notify user
+  alert("✅ Message sent successfully!");
+  form.reset();
+
+  // 4. Open mail app
+  window.location.href = mailtoLink;
+};
+
 
   return (
     <section id="contact" className="py-16 bg-white">
@@ -190,5 +217,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  );
+  )
 }
