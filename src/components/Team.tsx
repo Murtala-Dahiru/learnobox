@@ -4,31 +4,31 @@ import { motion } from 'framer-motion';
 export default function Team() {
   const teamMembers = [
     {
-      name: 'Adebayo Johnson',
+      name: 'Abu Sufiyan Muhammed',
       role: 'Creative Director',
       image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
       bio: 'Visionary leader with 8+ years in creative direction and brand storytelling.',
     },
     {
-      name: 'Kemi Adebisi',
+      name: 'Abdullahi Muhammed',
       role: 'Lead Videographer',
       image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=400&q=80',
       bio: 'Award-winning videographer specializing in documentary and commercial production.',
     },
     {
-      name: 'Tunde Okafor',
+      name: 'Murtala Dahiru',
       role: 'Art Director',
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80',
       bio: 'Creative artist blending traditional African aesthetics with modern design.',
     },
     {
-      name: 'Funmi Adesanya',
+      name: 'Joshwa Okwu',
       role: 'Content Strategist',
       image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80',
       bio: 'Strategic thinker crafting compelling narratives for brands and organizations.',
     },
     {
-      name: 'Chidi Okwu',
+      name: 'Usman Usman',
       role: 'Technical Producer',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
       bio: 'Technical expert ensuring flawless execution of all production projects.',

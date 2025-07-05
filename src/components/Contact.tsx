@@ -25,7 +25,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
   if (error) {
     console.error("Submission Error:", error.message);
-    alert("❌ Failed to send message. Please try again later.");
+    alert("❌ Failed to send message. Please try again.");
     return;
   }
 
@@ -166,12 +166,18 @@ const handleSubmit = async (e: React.FormEvent) => {
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#46A8AB] focus:border-transparent"
                 >
                   <option value="">Select a service</option>
-                  <option value="Videography & Content Creation">Videography & Content Creation</option>
-                  <option value="Art & Design Services">Art & Design Services</option>
-                  <option value="Photography & Studio Rental">Photography & Studio Rental</option>
-                  <option value="Educational Content">Educational Content</option>
+                  <option value="Documentary Production">Documentary Production</option>
+                  <option value="Adverts & Brand Storytelling">Adverts & Brand Storytelling</option>
+                  <option value="Wedding & Event Coverage">Wedding & Event Coverage</option>
+                  <option value="Educational Course Creation">Educational Course Creation</option>
+                  <option value="Studio Rental">Studio Rental</option>
+                  <option value="Custom Illustration & Digital Art">Custom Illustration & Digital Art</option>
+                  <option value="Comics & Storybooks">Comics & Storybooks</option>
+                  <option value="Flyers & Promotional Designs">Flyers & Promotional Designs</option>
+                  <option value="Product Photography">Product Photography</option>
                   <option value="Other">Other</option>
                 </select>
+              
               </div>
               
               <div className="mb-6">
