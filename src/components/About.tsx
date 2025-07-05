@@ -39,11 +39,11 @@ export default function About() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">About Learnobox</h2>
             <p className="text-gray-600 mb-6">
               Learnobox is a visionary creative agency founded on the principles of innovation, storytelling, and purposeful expression. 
-              At our core, we believe creativity is not just art — it's a powerful tool for education, empowerment, and social transformation.
+              At our core, we believe creativity is not just art, it's a powerful tool for education, empowerment, and social transformation.
             </p>
             <p className="text-gray-600 mb-8">
               We are committed to reshaping narratives, documenting realities, and nurturing talents through cutting-edge multimedia 
-              and design services — built not only for aesthetics, but for impact.
+              and design services built not only for aesthetics, but for impact.
             </p>
             
             {/* Vision & Mission */}
@@ -55,7 +55,7 @@ export default function About() {
               </p>
               <h3 className="text-xl font-bold text-[#46A8AB] mb-3">Our Mission</h3>
               <p className="text-gray-700">
-                To deliver world-class creative solutions in videography, design, and digital education — promoting Nigerian culture, 
+                To deliver world-class creative solutions in videography, design, and digital education to promoting Nigerian culture, 
                 supporting youth development, and connecting with global audiences through compelling visual storytelling.
               </p>
             </div>

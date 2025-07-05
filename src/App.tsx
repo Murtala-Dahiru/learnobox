@@ -116,7 +116,7 @@ function App() {
                   <Phone className="h-4 w-4 mr-2 text-[#46A8AB]" />
                   07056506206
                 </li>
-                <li>Lagos, Nigeria</li>
+                <li>Kaduna, Nigeria</li>
               </ul>
             </div>
             <div>
@@ -129,7 +129,7 @@ function App() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-            <p>&copy; 2025 Learnobox. All rights reserved. Made with ❤️ in Nigeria</p>
+            <p>&copy; 2025 Learnobox. All rights reserved.</p>
           </div>
         </div>
       </footer>

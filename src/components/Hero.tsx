@@ -20,9 +20,9 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-            Where Stories Come <span className="text-[#46A8AB]">Alive</span>
-          </h1>
+          <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+            Creating What the World <span className="text-[#46A8AB]">Will Remember</span>
+          </h3>
           <p className="text-xl text-gray-600 mb-8 max-w-4xl mx-auto">
             Learnobox is a Nigerian creative agency rooted in innovation, storytelling, and impact. 
             We harness the power of multimedia, design, and education to amplify voices, elevate brands, and inspire change.
@@ -65,20 +65,20 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <div className="p-6">
-            <div className="text-4xl font-bold text-[#46A8AB] mb-2">200+</div>
+            <div className="text-4xl font-bold text-[#46A8AB] mb-2">20+</div>
             <p className="text-gray-600">Projects Completed</p>
           </div>
           <div className="p-6">
-            <div className="text-4xl font-bold text-[#46A8AB] mb-2">50+</div>
+            <div className="text-4xl font-bold text-[#46A8AB] mb-2">15+</div>
             <p className="text-gray-600">Happy Clients</p>
           </div>
           <div className="p-6">
-            <div className="text-4xl font-bold text-[#46A8AB] mb-2">5+</div>
+            <div className="text-4xl font-bold text-[#46A8AB] mb-2">1+</div>
             <p className="text-gray-600">Years Experience</p>
           </div>
           <div className="p-6">
-            <div className="text-4xl font-bold text-[#46A8AB] mb-2">100%</div>
-            <p className="text-gray-600">Nigerian Made</p>
+            <div className="text-4xl font-bold text-[#46A8AB] mb-2">97%</div>
+            <p className="text-gray-600">Impact</p>
           </div>
         </motion.div>
       </div>

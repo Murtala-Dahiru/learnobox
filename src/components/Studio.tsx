@@ -52,7 +52,7 @@ export default function Studio() {
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Creative Studio & Space</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Learnobox offers a fully equipped photography and video studio tailored to meet the needs of creatives, 
-            influencers, and professionals in Lagos, Nigeria.
+            influencers, and professionals in Kaduna, Nigeria.
           </p>
         </motion.div>
 
