@@ -1,5 +1,6 @@
 import React from 'react';
 import { Play, ExternalLink } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function Portfolio() {
   const projects = [
@@ -10,10 +11,10 @@ export default function Portfolio() {
       description: 'Authentic stories from Lagos youth showcasing resilience and creativity.',
     },
     {
-      title: 'Brand Campaign for Local Business',
-      category: 'Commercial',
-      image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80',
-      description: 'Compelling brand storytelling that drove 300% engagement increase.',
+      title: 'Corporate Video Production',
+      category: 'Videography',
+      image: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80',
+      description: 'Professional corporate storytelling that elevated brand presence and engagement.',
     },
     {
       title: 'Educational Series Production',
@@ -34,17 +35,30 @@ export default function Portfolio() {
   return (
     <section id="portfolio" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <motion.div 
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Work</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             From grassroots documentaries to global brand campaigns, see how we've helped tell authentic Nigerian stories 
             and build impactful content that resonates worldwide.
           </p>
-        </div>
+        </motion.div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="group relative overflow-hidden rounded-xl shadow-lg bg-white">
+            <motion.div 
+              key={index} 
+              className="group relative overflow-hidden rounded-xl shadow-lg bg-white"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true }}
+            >
               <div className="relative overflow-hidden">
                 <img 
                   src={project.image} 
@@ -75,12 +89,18 @@ export default function Portfolio() {
                   View Project <ExternalLink className="ml-2 h-4 w-4" />
                 </button>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* Portfolio CTA */}
-        <div className="mt-16 text-center">
+        <motion.div 
+          className="mt-16 text-center"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Want to See More?</h3>
           <p className="text-gray-600 mb-6">
             Check out our full portfolio and behind-the-scenes content on our social media channels.
@@ -99,7 +119,7 @@ export default function Portfolio() {
               Follow Our Journey
             </button>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

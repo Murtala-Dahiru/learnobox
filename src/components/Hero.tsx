@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Play } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function Hero() {
   const handleStartProject = () => {
@@ -7,14 +8,18 @@ export default function Hero() {
   };
 
   const handleWatchReel = () => {
-    // You can replace this with actual video URL or modal
     window.open('https://instagram.com/learnobox01', '_blank');
   };
 
   return (
     <section id="home" className="pt-20 lg:pt-32 pb-16 bg-gradient-to-br from-[#46A8AB]/10 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center">
+        <motion.div 
+          className="text-center"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Where Stories Come <span className="text-[#46A8AB]">Alive</span>
           </h1>
@@ -37,34 +42,45 @@ export default function Hero() {
               Watch Our Reel
             </button>
           </div>
-        </div>
-        <div className="mt-12 max-w-4xl mx-auto">
+        </motion.div>
+        
+        <motion.div 
+          className="mt-12 max-w-4xl mx-auto"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
           <img 
-            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=80" 
-            alt="Creative team at work" 
+            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" 
+            alt="African creative professionals in modern studio setting" 
             className="rounded-2xl shadow-2xl w-full h-[300px] object-cover"
           />
-        </div>
+        </motion.div>
         
         {/* Stats Section */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <motion.div 
+          className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
           <div className="p-6">
-            <div className="text-4xl font-bold text-[#46A8AB] mb-2">30+</div>
+            <div className="text-4xl font-bold text-[#46A8AB] mb-2">200+</div>
             <p className="text-gray-600">Projects Completed</p>
           </div>
           <div className="p-6">
-            <div className="text-4xl font-bold text-[#46A8AB] mb-2">98%</div>
+            <div className="text-4xl font-bold text-[#46A8AB] mb-2">50+</div>
             <p className="text-gray-600">Happy Clients</p>
           </div>
           <div className="p-6">
-            <div className="text-4xl font-bold text-[#46A8AB] mb-2">1+</div>
+            <div className="text-4xl font-bold text-[#46A8AB] mb-2">5+</div>
             <p className="text-gray-600">Years Experience</p>
           </div>
           <div className="p-6">
-            <div className="text-4xl font-bold text-[#46A8AB] mb-2">95%</div>
-            <p className="text-gray-600">Impact</p>
+            <div className="text-4xl font-bold text-[#46A8AB] mb-2">100%</div>
+            <p className="text-gray-600">Nigerian Made</p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -5,6 +5,7 @@ import Services from './components/Services';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Studio from './components/Studio';
+import Team from './components/Team';
 import Contact from './components/Contact';
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
               <a href="#about" className="text-gray-700 hover:text-[#46A8AB] transition">About</a>
               <a href="#services" className="text-gray-700 hover:text-[#46A8AB] transition">Services</a>
               <a href="#portfolio" className="text-gray-700 hover:text-[#46A8AB] transition">Portfolio</a>
+              <a href="#team" className="text-gray-700 hover:text-[#46A8AB] transition">Team</a>
               <a href="#studio" className="text-gray-700 hover:text-[#46A8AB] transition">Studio</a>
               <a href="#contact" className="text-gray-700 hover:text-[#46A8AB] transition">Contact</a>
               <button 
@@ -60,6 +62,7 @@ function App() {
               <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-[#46A8AB] transition">About</a>
               <a href="#services" className="block px-3 py-2 text-gray-700 hover:text-[#46A8AB] transition">Services</a>
               <a href="#portfolio" className="block px-3 py-2 text-gray-700 hover:text-[#46A8AB] transition">Portfolio</a>
+              <a href="#team" className="block px-3 py-2 text-gray-700 hover:text-[#46A8AB] transition">Team</a>
               <a href="#studio" className="block px-3 py-2 text-gray-700 hover:text-[#46A8AB] transition">Studio</a>
               <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-[#46A8AB] transition">Contact</a>
               <button 
@@ -78,6 +81,7 @@ function App() {
         <About />
         <Services />
         <Portfolio />
+        <Team />
         <Studio />
         <Contact />
       </main>
@@ -97,6 +101,7 @@ function App() {
                 <li><a href="#about" className="text-gray-400 hover:text-[#46A8AB] transition">About</a></li>
                 <li><a href="#services" className="text-gray-400 hover:text-[#46A8AB] transition">Services</a></li>
                 <li><a href="#portfolio" className="text-gray-400 hover:text-[#46A8AB] transition">Portfolio</a></li>
+                <li><a href="#team" className="text-gray-400 hover:text-[#46A8AB] transition">Team</a></li>
                 <li><a href="#studio" className="text-gray-400 hover:text-[#46A8AB] transition">Studio</a></li>
               </ul>
             </div>
@@ -111,7 +116,7 @@ function App() {
                   <Phone className="h-4 w-4 mr-2 text-[#46A8AB]" />
                   07056506206
                 </li>
-                <li>Kaduna, Nigeria</li>
+                <li>Lagos, Nigeria</li>
               </ul>
             </div>
             <div>
@@ -124,7 +129,7 @@ function App() {
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-            <p>&copy; 2025 Learnobox. All rights reserved.</p>
+            <p>&copy; 2025 Learnobox. All rights reserved. Made with ❤️ in Nigeria</p>
           </div>
         </div>
       </footer>
