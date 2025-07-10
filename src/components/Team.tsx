@@ -6,31 +6,31 @@ export default function Team() {
     {
       name: 'Abu Sufiyan Muhammed',
       role: 'Creative Director',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80',
+      image: 'Public/Teampics/Sufiyan.jpg',
       bio: 'Visionary leader with 8+ years in creative direction and brand storytelling.',
     },
     {
       name: 'Abdullahi Muhammed',
       role: 'Lead Videographer',
-      image: 'https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=400&q=80',
+      image: 'Public/Teampics/Amex.jpg',
       bio: 'Award-winning videographer specializing in documentary and commercial production.',
     },
     {
       name: 'Murtala Dahiru',
       role: 'Art Director',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80',
+      image: 'Public/Teampics/MD.jpg',
       bio: 'Creative artist blending traditional African aesthetics with modern design.',
     },
     {
       name: 'Joshwa Okwu',
       role: 'Content Strategist',
-      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80',
+      image: 'Public/Teampics/Joshwa.jpg',
       bio: 'Strategic thinker crafting compelling narratives for brands and organizations.',
     },
     {
       name: 'Usman Usman',
       role: 'Technical Producer',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80',
+      image: 'Public/Teampics/Usman.jpg',
       bio: 'Technical expert ensuring flawless execution of all production projects.',
     },
   ];
