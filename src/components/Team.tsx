@@ -7,7 +7,7 @@ export default function Team() {
       name: 'Abu Sufiyan Muhammed',
       role: 'Creative Director',
       image: 'Public/Teampics/Sufiyan.jpg',
-      bio: 'Visionary leader with 8+ years in creative direction and brand storytelling.',
+      bio: 'Visionary leader in creative direction and brand storytelling.',
     },
     {
       name: 'Abdullahi Muhammed',
@@ -17,7 +17,7 @@ export default function Team() {
     },
     {
       name: 'Murtala Dahiru',
-      role: 'Art Director',
+      role: 'Marketing Director',
       image: 'Public/Teampics/MD.jpg',
       bio: 'Creative artist blending traditional African aesthetics with modern design.',
     },
