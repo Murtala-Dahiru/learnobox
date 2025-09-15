@@ -14,7 +14,8 @@
     "framer-motion": "^12.23.0",
     "lucide-react": "^0.344.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "vite": "^5.4.20"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
@@ -29,10 +30,9 @@
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.5.3",
-    "typescript-eslint": "^8.3.0",
-    "vite": "^5.4.20"
+    "typescript-eslint": "^8.3.0"
   },
   "engines": {
-    "node": "18.x"
+    "node": "22.x"
   }
 }
